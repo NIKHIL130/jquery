@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+#para{
+width: 250px;
+height: 150px;
+overflow: scroll;
+border: 2px solid red;
+font-size: 25px;
+}
+</style>
+</head>
+
+<body>
+<h1>Nikhil Desai</h1>
+<h2> scroll </h2>
+<p> This is an example of using the <b> scroll() </b> method. </p>
+<p id = "para">  Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions. The term may also be applied to any machine that exhibits traits associated with a human mind such as learning and problem-solving.
+     </p>
+<script>
+$(document).ready(function(){
+$("#para").scroll(function(){
+$("#para").css("color", "red");
+$("#para").css("background", "lightgreen");
+});
+});
+</script>
+</body>
+</html>
+
+ 
